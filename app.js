@@ -1,5 +1,7 @@
 const texto = document.querySelector(".texto")
+const aviso = document.querySelector(".aviso")
 const respuesta = document.querySelector(".respuesta");
+const muneco = document.querySelector(".muneco");
 const btnEncriptar = document.querySelector(".btn-encriptar");
 const btnDesncriptar = document.querySelector(".btn-desencriptar");
 const btnCopiar = document.querySelector("#btn-copy");
@@ -32,6 +34,8 @@ btnEncriptar.addEventListener("click", function btnEncriptar() {
 
         const textoEncriptado = encriptar(texto.value);
         texto.value = "";
+        aviso.classList.add("ocultar");
+        muneco.classList.add("ocultar");
         respuesta.innerHTML = textoEncriptado;
         btnCopiar.classList.remove("ocultar")
 
@@ -41,14 +45,15 @@ btnEncriptar.addEventListener("click", function btnEncriptar() {
         texto.value = "";
         btnCopiar.classList.add("ocultar")
         respuesta.value = "Ingresa el texto que desees encriptar o desencriptar"
+
     }
 });
 
 btnDesncriptar.addEventListener("click", function btnDesncriptar() {
     if (validarEntrada) {
-
         const textoEncriptado = desencriptar(texto.value);
         texto.value = "";
+        aviso.classList.add("ocultar");
         respuesta.innerHTML = textoEncriptado;
         btnCopiar.classList.remove("ocultar")
 

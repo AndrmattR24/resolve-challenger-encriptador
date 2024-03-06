@@ -15,6 +15,8 @@
     --gray-100: #d8dfe8;
 }
 
+/* Mobile First */
+
 body {
     background: var(--ligth-blue-100);
 }
@@ -140,4 +142,45 @@ footer {
 
 footer p {
     color: white;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .contendedor-botones {
+        flex-direction: row;
+    }
+}
+
+/* Desktop*/
+@media (min-width: 1200px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .entrada {
+        display: flex;
+        width: 40%;
+    }
+
+    .contendedor-botones {
+        flex-direction: row;
+    }
+
+    .salida {
+        justify-content: space-between;
+        width: 20%;
+    }
+
+    .salida .respuesta {
+        justify-self: flex-start;
+        align-items: flex-start;
+    }
+
+    .contenedor-muneco {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
