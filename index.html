@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge | Encriptador</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- enlanzado de hoja de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="assets/logo-alura.svg" alt="Logo Alura">
+    </header>
+    <!-- main -->
+    <main>
+        <!-- entrada de usuario -->
+        <section>
+            <textarea class="texto" placeholder="Ingrese el texto aqui"></textarea>
+            <!-- Terminos -->
+            <p><Strong>!</Strong>Solo letras minisculas y sin acentos</p>
+            <!-- Botones -->
+            <div class="contendedor-botones">
+                <button class="btn-encriptar" type="button">Encriptar</button>
+                <button class="btn-desencriptar" type="button">Desencriptar</button>
+            </div>
+        </section>
+        <!-- salida de usuario -->
+        <section>
+            <div class="contenedor-muneco">
+                <img class="ocultar" src="assets/muneco.svg" alt="Muñeco">
+            </div>
+            <div class="contenedor-respuesta">
+                <h3 class="ocultar">Ningún mensaje fue encontrado</h3>
+                <p class="respuesta-usuario">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <!-- enlazado de funcionalidad com JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
