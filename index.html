@@ -16,34 +16,44 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="assets/logo-alura.svg" alt="Logo Alura">
+        <img class="logo" src="assets/logo-alura.svg" alt="Logo Alura">
     </header>
     <!-- main -->
     <main>
         <!-- entrada de usuario -->
-        <section>
+        <section class="entrada">
             <textarea class="texto" placeholder="Ingrese el texto aqui"></textarea>
             <!-- Terminos -->
-            <p><Strong>!</Strong>Solo letras minisculas y sin acentos</p>
+            <div class="terminos">
+                <p><Strong>!</Strong>Solo letras minisculas y sin acentos</p>
+            </div>
             <!-- Botones -->
             <div class="contendedor-botones">
-                <button class="btn-encriptar" type="button">Encriptar</button>
-                <button class="btn-desencriptar" type="button">Desencriptar</button>
+                <button class="btn btn-encriptar" type="button">Encriptar</button>
+                <button class="btn btn-desencriptar" type="button">Desencriptar</button>
             </div>
         </section>
         <!-- salida de usuario -->
-        <section>
+        <section class="salida">
             <div class="contenedor-muneco">
                 <img class="ocultar" src="assets/muneco.svg" alt="Muñeco">
             </div>
             <div class="contenedor-respuesta">
                 <h3 class="ocultar">Ningún mensaje fue encontrado</h3>
-                <p class="respuesta-usuario">Ingresa el texto que desees encriptar o desencriptar</p>
+                <p class="respuesta">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="contenedor-copiar">
+                <input class="btn btn-copiar ocultar" id="btn-copy" type="button" value="Copiar">
             </div>
         </section>
     </main>
     <!-- enlazado de funcionalidad com JS -->
     <script src="app.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Andres Matias R &copy; 2024</p>
+    </footer>
 </body>
 
 </html>
