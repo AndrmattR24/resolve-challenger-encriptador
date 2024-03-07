@@ -19,6 +19,9 @@
 
 body {
     background: var(--ligth-blue-100);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .logo {
@@ -30,6 +33,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-grow: 1;
 }
 
 /* Seccion entrada */
@@ -49,7 +53,7 @@ main {
     margin-top: 25px;
     resize: none;
     padding: 20px 10px;
-    font-size: 20px;
+    font-size: 32px;
     border: none;
     background: var(--ligth-blue-100);
     color: var(--dark-blue-300);
@@ -126,6 +130,10 @@ main {
     line-height: 30px;
 }
 
+.contenedor-respuesta .respuesta {
+    color: var(--gray-400);
+}
+
 .contenedor-copiar {
     display: flex;
 }
@@ -149,6 +157,10 @@ footer p {
     .contendedor-botones {
         flex-direction: row;
     }
+
+    .contenedor-respuesta .aviso {
+        font-size: 20px;
+    }
 }
 
 /* Desktop*/
@@ -169,18 +181,24 @@ footer p {
     }
 
     .salida {
-        justify-content: space-between;
+        margin-top: -70px;
         width: 20%;
-    }
-
-    .salida .respuesta {
-        justify-self: flex-start;
-        align-items: flex-start;
+        gap: 50px;
     }
 
     .contenedor-muneco {
         display: flex;
-        justify-content: center;
-        text-align: center;
+    }
+
+    .muneco {
+        width: 95%;
+    }
+
+    .salida .aviso {
+        font-size: 20px;
+    }
+
+    .salida .respuesta {
+        font-weight: 400;
     }
 }
