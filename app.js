@@ -78,6 +78,9 @@ async function copiarPortapeles(texto) {
         setTimeout(function () {
             btnCopiar.value = "Copiar";
         }, 2000);
+
+       alert("Texto copiado correctamente")
+        
     } catch (error) {
         alert("Ocurrió un error: " + error);
     }
